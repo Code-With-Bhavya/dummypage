@@ -1,4 +1,12 @@
-import { ChevronDown, ChevronRight, Cpu, LoaderCircle, Search, Star } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronRight,
+  Cpu,
+  LoaderCircle,
+  MemoryStick,
+  Search,
+  Star,
+} from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -103,19 +111,19 @@ export default function Home() {
 
       {/* Card with grid display two columns only no row w-full. The second column has also grid display with two rows */}
       <div className="grid grid-cols-2 gap-4 mt-8 pl-10 pr-10">
-        <div className="w-full rounded-md flex justify-center">
+        <div className="w-full h-fit rounded-md flex justify-center">
           <Image
             src={"https://wallpaperaccess.com/full/271396.jpg"}
-            layout="responsive"
+            
             width={500}
-            height={10}
+            height={400}
             alt="product"
           />
         </div>
 
         <div className="grid grid-rows-2 gap-4">
           <div className="w-full flex flex-col gap-2 rounded-md font-bold relative">
-            <p className="col-span-2 row-span-1 font-semibold h-fit">
+            <p className="col-span-2 row-span-1 font-semibold h-fit text-xl">
               Key Specifications
             </p>
 
@@ -215,13 +223,34 @@ export default function Home() {
               </div>
             </div>
 
-
-            <p className="absolute right-0 bottom-0 text-[#007fdb] flex">View Full Specs <ChevronRight className="w-5"/></p>
-
-
+            <p className="absolute right-0 bottom-0 text-[#007fdb] flex">
+              View Full Specs <ChevronRight className="w-5" />
+            </p>
           </div>
 
-          <div className="w-full  bg-[#F4F4F4] rounded-md"></div>
+          <div className="w-full gap-7 flex flex-col">
+            <div className="w-full flex justify-center">
+              <div className="w-[95%] h-[1px] bg-[#DEDFDF]"></div>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <p className="font-semibold text-xl">BMW 4 Series Prices</p>
+
+              <div className="border">
+                <div className="flex justify-between pl-5">
+                  <div className="flex gap-2">
+                    <MemoryStick /> 12 GB + 256 GB
+                  </div>
+                  <div className="bg-[#E3EEFF] rounded-full"><ChevronDown stroke="#65B0EB" /></div>
+                  
+                </div>
+                <div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
