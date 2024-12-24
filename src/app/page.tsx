@@ -1,4 +1,4 @@
-import { ChevronDown, LoaderCircle, Search, Star } from "lucide-react";
+import { ChevronDown, ChevronRight, Cpu, LoaderCircle, Search, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -102,49 +102,128 @@ export default function Home() {
       </div>
 
       {/* Card with grid display two columns only no row w-full. The second column has also grid display with two rows */}
-        <div className="grid grid-cols-2 gap-4 mt-8 pl-10 pr-10">
-
-          <div className="w-full rounded-md flex justify-center">
-            <Image src={'https://wallpaperaccess.com/full/271396.jpg'} width={500} height={10} alt="product"/>
-          </div>
-
-
-
-
-          <div className="grid grid-rows-2 gap-4">
-            <div className="w-full h-[140px] bg-[#F4F4F4] rounded-md"></div>
-            <div className="w-full h-[140px] bg-[#F4F4F4] rounded-md"></div>
-          </div>
-
+      <div className="grid grid-cols-2 gap-4 mt-8 pl-10 pr-10">
+        <div className="w-full rounded-md flex justify-center">
+          <Image
+            src={"https://wallpaperaccess.com/full/271396.jpg"}
+            layout="responsive"
+            width={500}
+            height={10}
+            alt="product"
+          />
         </div>
 
+        <div className="grid grid-rows-2 gap-4">
+          <div className="w-full flex flex-col gap-2 rounded-md font-bold relative">
+            <p className="col-span-2 row-span-1 font-semibold h-fit">
+              Key Specifications
+            </p>
+
+            <div className="flex">
+              {/*Specifications element*/}
+              <div className="w-full flex flex-col gap-2">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full flex flex-col gap-2">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <Cpu stroke="#7B879B" />
+                    <div className="flex flex-col">
+                      <div className="text-[#7B879B] font-extralight text-sm">
+                        Processor
+                      </div>
+                      <div className="text-black text-base font-light">BMW</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
+            <p className="absolute right-0 bottom-0 text-[#007fdb] flex">View Full Specs <ChevronRight className="w-5"/></p>
 
 
+          </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div className="w-full  bg-[#F4F4F4] rounded-md"></div>
+        </div>
       </div>
+    </div>
   );
 }
