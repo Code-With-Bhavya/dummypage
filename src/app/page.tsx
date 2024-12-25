@@ -606,7 +606,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-4 border-t border-gray-200 pt-4">
-            {/* Card 1 */}
+            {/* Card 1   */}
             <div className="border shadow-sm bg-white text-center">
               <div className="p-7">
                 <Image
