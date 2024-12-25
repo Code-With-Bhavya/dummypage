@@ -231,24 +231,24 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-rows-2 gap-4">
-            <div className="w-full flex flex-col gap-2 rounded-md font-bold relative">
+          <div className="flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-2 rounded-md font-bold">
               <p className="col-span-2 row-span-1 font-semibold h-fit text-xl">
                 Key Specifications
               </p>
 
               <div className="flex">
-                {/*Specifications element*/}
+                {/* Specifications element */}
                 <div className="w-full flex flex-col gap-2">
                   <div>
                     <div className="flex items-center gap-2">
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Price
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          ₹ 7.79 - 11.86 Lakh
                         </div>
                       </div>
                     </div>
@@ -258,10 +258,10 @@ export default function Home() {
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Fuel Type
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          Petrol, CNG
                         </div>
                       </div>
                     </div>
@@ -271,10 +271,10 @@ export default function Home() {
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Transmission
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          Manual, Automatic (AMT)
                         </div>
                       </div>
                     </div>
@@ -284,10 +284,10 @@ export default function Home() {
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Engine Size
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          1197 cc
                         </div>
                       </div>
                     </div>
@@ -299,10 +299,10 @@ export default function Home() {
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Mileage
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          24.7 - 33.73 km/l
                         </div>
                       </div>
                     </div>
@@ -312,10 +312,10 @@ export default function Home() {
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Safety Rating
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          5 Star (Global NCAP)
                         </div>
                       </div>
                     </div>
@@ -325,10 +325,10 @@ export default function Home() {
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Ground Clearance
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          163 mm
                         </div>
                       </div>
                     </div>
@@ -338,10 +338,10 @@ export default function Home() {
                       <Cpu stroke="#7B879B" />
                       <div className="flex flex-col">
                         <div className="text-[#7B879B] font-extralight text-sm">
-                          Processor
+                          Waiting Period
                         </div>
                         <div className="text-black text-base font-light">
-                          BMW
+                          7 - 12 Weeks
                         </div>
                       </div>
                     </div>
@@ -349,7 +349,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <p className="absolute right-0 bottom-0 text-[#007fdb] flex">
+              <p className="text-[#007fdb] flex w-full justify-end">
                 View Full Specs <ChevronRight className="w-5" />
               </p>
             </div>
@@ -408,7 +408,7 @@ export default function Home() {
                     View All <ChevronDown />
                   </div>
                 </div>
-                <div className="flex justify-between px-7 bg-[#F3FAFF] py-2 rounded-lg border items-center">
+                <div className="flex justify-between mb-5 px-7 bg-[#F3FAFF] py-2 rounded-lg border items-center">
                   <div>12 GB + 512 GB</div>
                   <div className="text-gray-700">
                     Starting From{" "}
@@ -423,23 +423,22 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* After Card */}
-
-      <div className="p-6 bg-white shadow rounded-lg max-w-5xl mx-auto mt-10">
+      <div className="p-6 bg-white shadow rounded-lg w-full mx-auto mt-10">
         <div className="flex justify-between items-center border-b pb-4">
           <div>
-            <h2 className="text-lg font-semibold">Expert View</h2>
+            <h2 className="text-lg font-semibold text-black">Expert View</h2>
             <p className="text-sm text-gray-500">
               By{" "}
-              <a href="#" className="text-blue-600">
+              <a href="#" className="text-blue-600 underline">
                 Robin John
               </a>{" "}
               | on Feb 11, 2024
             </p>
           </div>
-          <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold">8.7</span>
+          <div className="flex items-center space-x-2 border-green-500 border p-2 rounded-lg bg-[#FBFFFE]">
+            <LoaderCircle stroke="green" className="w-5" />
+            <span className="text-xl font-bold text-black">8.7</span>
             <span className="text-gray-500">/10</span>
             <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">
               Expert Score
@@ -490,12 +489,30 @@ export default function Home() {
               <span className="mr-2">👍</span> Pros
             </h3>
             <ul className="mt-2 text-sm text-gray-600 space-y-1">
-              <li>Striking, bright and vivid display</li>
-              <li>Anti-reflective coating is a godsend</li>
-              <li>Excellent and reliable battery life</li>
-              <li>Circle to search and Generative Edit are useful tools</li>
-              <li>Great camera setup, useful 5x periscope lens</li>
-              <li>Good performance</li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                Striking, bright and vivid display
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                Anti-reflective coating is a godsend
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                Excellent and reliable battery life
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-green-600 rounded-full"></div>Circle
+                to search and Generative Edit are useful tools
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-green-600 rounded-full"></div>Great
+                camera setup, useful 5x periscope lens
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-green-600 rounded-full"></div>Good
+                performance
+              </li>
             </ul>
           </div>
           <div className="bg-red-50 p-4 rounded-lg shadow">
@@ -503,10 +520,171 @@ export default function Home() {
               <span className="mr-2">👎</span> Cons
             </h3>
             <ul className="mt-2 text-sm text-gray-600 space-y-1">
-              <li>Costlier than ever</li>
-              <li>Unwieldy size, sharp edges</li>
-              <li>Charging speeds need an upgrade</li>
-              <li>Some AI features need refinement</li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>Costlier
+                than ever
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>Unwieldy
+                size, sharp edges
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>Charging
+                speeds need an upgrade
+              </li>
+              <li className="flex gap-2 items-center">
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>Some AI
+                features need refinement
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Verdict */}
+        <div className="bg-white w-full p-6 shadow rounded-lg mt-6">
+          <h3 className="flex items-center text-lg font-semibold text-black">
+            <span className="mr-2">💬</span> Verdict
+          </h3>
+          <p className="mt-4 text-sm text-black leading-relaxed">
+            The Samsung Galaxy S24 Ultra impresses with its robust hardware,
+            featuring a sensible higher-megapixel camera and a smooth transition
+            from 3x to 5x zoom. Despite a slightly less powerful custom chip, it
+            adeptly handles all tasks. Noteworthy display improvements,
+            including an anti-reflective coating, stand out, though the
+            phone&apos;s weight remains a drawback despite a titanium build.
+            Software enhancements and reliable battery life make it a solid
+            choice, though charging speeds maintain a consistent performance.
+            Despite ongoing jokes about its cost, the Galaxy S24 Ultra stands as
+            the top Android phone.
+          </p>
+          <p className="mt-4 w-full inline-block text-blue-600 font-bold text-right hover:underline">
+            Read BMW 4 Series Review →
+          </p>
+        </div>
+      </div>
+      {/* Next alternative */}
+
+      <div className="text-black w-full bg-gray-50 p-6">
+        {/* Alternatives Section */}
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-bold">Alternatives</h2>
+          <div className="flex items-center space-x-4">
+            <button className="bg-blue-100 text-blue-500 font-medium px-4 py-2 rounded-lg">
+              Popular
+            </button>
+            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
+              Cheaper
+            </button>
+            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
+              From Samsung
+            </button>
+            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
+              Other Brands
+            </button>
+            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
+              New
+            </button>
+            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
+              Best Rated
+            </button>
+          </div>
+        </div>
+
+        <div className="flex items-center mb-4">
+          <input type="checkbox" className="mr-2" />
+          <label className="text-sm text-gray-600">Show only Differences</label>
+        </div>
+
+        <div className="grid grid-cols-4 gap-6 border-t border-gray-200 pt-4">
+          {/* Card 1 */}
+          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
+            <Image
+              width={50}
+              height={10}
+              src="https://wallpaperaccess.com/full/271396.jpg"
+              alt="Samsung Galaxy S24 Ultra"
+              className="w-full rounded"
+            />
+            <h3 className="font-bold text-lg mt-2">Samsung Galaxy S24 Ultra</h3>
+            <p className="text-gray-500 text-sm mt-1">₹ 95,800</p>
+            <p className="font-semibold mt-1 text-green-500">
+              8.7/10 by Expert
+            </p>
+            <ul className="text-sm text-gray-600 mt-2 space-y-1">
+              <li>Snapdragon 8 Gen 3</li>
+              <li>6.8 (17.27 cm) 120Hz Display</li>
+              <li>200+12+10+50 MP Rear | 12 MP Front</li>
+              <li>12 GB RAM | 256 GB Storage</li>
+              <li>5000 mAh | 45W Charging</li>
+            </ul>
+          </div>
+
+          {/* Card 2 */}
+          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
+            <Image
+              width={50}
+              height={10}
+              src="https://wallpaperaccess.com/full/271396.jpg"
+              alt="Apple iPhone 16 Pro"
+              className="w-full rounded"
+            />
+            <h3 className="font-bold text-lg mt-2">Apple iPhone 16 Pro</h3>
+            <p className="text-gray-500 text-sm mt-1">₹ 116,900</p>
+            <p className="font-semibold mt-1 text-green-500">
+              9.1/10 by Expert
+            </p>
+            <ul className="text-sm text-gray-600 mt-2 space-y-1">
+              <li>Apple A18 Pro</li>
+              <li>6.3 (16 cm) 120Hz Display</li>
+              <li>48+48+12 MP Rear | 12 MP Front</li>
+              <li>8 GB RAM | 128 GB Storage</li>
+              <li>3582 mAh | 20W Charging</li>
+            </ul>
+          </div>
+
+          {/* Card 3 */}
+          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
+            <Image
+              width={50}
+              height={10}
+              src="https://wallpaperaccess.com/full/271396.jpg"
+              alt="Samsung Galaxy S23 Ultra 5G"
+              className="w-full rounded"
+            />
+            <h3 className="font-bold text-lg mt-2">
+              Samsung Galaxy S23 Ultra 5G
+            </h3>
+            <p className="text-gray-500 text-sm mt-1">₹ 72,999</p>
+            <p className="font-semibold mt-1 text-green-500">
+              8.8/10 by Expert
+            </p>
+            <ul className="text-sm text-gray-600 mt-2 space-y-1">
+              <li>Snapdragon 8 Gen 2</li>
+              <li>6.8 (17.27 cm) 120Hz Display</li>
+              <li>200+12+10+10 MP Rear | 12 MP Front</li>
+              <li>12 GB RAM | 256 GB Storage</li>
+              <li>5000 mAh | 45W Charging</li>
+            </ul>
+          </div>
+
+          {/* Card 4 */}
+          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
+            <Image
+              width={50}
+              height={10}
+              src="https://wallpaperaccess.com/full/271396.jpg"
+              alt="Apple iPhone 16 Pro Max"
+              className="w-full rounded"
+            />
+            <h3 className="font-bold text-lg mt-2">Apple iPhone 16 Pro Max</h3>
+            <p className="text-gray-500 text-sm mt-1">₹ 141,900</p>
+            <p className="font-semibold mt-1 text-gray-500">--</p>
+            <ul className="text-sm text-gray-600 mt-2 space-y-1">
+              <li>Apple A18 Pro</li>
+              <li>6.9 (17.53 cm) 120Hz Display</li>
+              <li>48+48+12 MP Rear | 12 MP Front</li>
+              <li>8 GB RAM | 256 GB Storage</li>
+              <li>4685 mAh | 20W Charging</li>
             </ul>
           </div>
         </div>
