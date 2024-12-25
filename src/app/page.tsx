@@ -3,6 +3,7 @@ import {
   ChevronDown,
   ChevronRight,
   Cpu,
+  FilterIcon,
   LoaderCircle,
   MemoryStick,
   Search,
@@ -562,130 +563,173 @@ export default function Home() {
           </p>
         </div>
       </div>
+
       {/* Next alternative */}
-
-      <div className="text-black w-full bg-gray-50 p-6">
-        {/* Alternatives Section */}
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold">Alternatives</h2>
-          <div className="flex items-center space-x-4">
-            <button className="bg-blue-100 text-blue-500 font-medium px-4 py-2 rounded-lg">
-              Popular
-            </button>
-            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
-              Cheaper
-            </button>
-            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
-              From Samsung
-            </button>
-            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
-              Other Brands
-            </button>
-            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
-              New
-            </button>
-            <button className="bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg">
-              Best Rated
-            </button>
-          </div>
-        </div>
-
-        <div className="flex items-center mb-4">
-          <input type="checkbox" className="mr-2" />
-          <label className="text-sm text-gray-600">Show only Differences</label>
-        </div>
-
-        <div className="grid grid-cols-4 gap-6 border-t border-gray-200 pt-4">
-          {/* Card 1 */}
-          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
-            <Image
-              width={50}
-              height={10}
-              src="https://wallpaperaccess.com/full/271396.jpg"
-              alt="Samsung Galaxy S24 Ultra"
-              className="w-full rounded"
-            />
-            <h3 className="font-bold text-lg mt-2">Samsung Galaxy S24 Ultra</h3>
-            <p className="text-gray-500 text-sm mt-1">₹ 95,800</p>
-            <p className="font-semibold mt-1 text-green-500">
-              8.7/10 by Expert
-            </p>
-            <ul className="text-sm text-gray-600 mt-2 space-y-1">
-              <li>Snapdragon 8 Gen 3</li>
-              <li>6.8 (17.27 cm) 120Hz Display</li>
-              <li>200+12+10+50 MP Rear | 12 MP Front</li>
-              <li>12 GB RAM | 256 GB Storage</li>
-              <li>5000 mAh | 45W Charging</li>
-            </ul>
+      <div className="bg-white w-full p-4 mt-4 rounded-lg shadow">
+        <div className="text-black w-full bg-gray-50 p-6 border">
+          {/* Alternatives Section */}
+          <div className="flex flex-col mb-4">
+            <h2 className="text-xl font-bold flex justify-between">
+              Alternatives
+              <div className="flex items-center mb-4">
+                <input type="checkbox" className="mr-2" />
+                <label className="text-sm text-gray-400 font-light">
+                  Show only Differences
+                </label>
+              </div>
+            </h2>
+            <div className="flex items-center space-x-4">
+              <FilterIcon
+                stroke="white"
+                size={30}
+                className="rounded-lg bg-black p-2"
+              />
+              <button className="bg-blue-600 text-white font-medium px-4 py-2 rounded-full">
+                Popular
+              </button>
+              <button className="bg-white text-gray-700 font-medium px-4 py-2 rounded-full">
+                Cheaper
+              </button>
+              <button className="bg-white text-gray-700 font-medium px-4 py-2 rounded-full">
+                From Samsung
+              </button>
+              <button className="bg-white text-gray-700 font-medium px-4 py-2 rounded-full">
+                Other Brands
+              </button>
+              <button className="bg-white text-gray-700 font-medium px-4 py-2 rounded-full">
+                New
+              </button>
+              <button className="bg-white text-gray-700 font-medium px-4 py-2 rounded-full">
+                Best Rated
+              </button>
+            </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
-            <Image
-              width={50}
-              height={10}
-              src="https://wallpaperaccess.com/full/271396.jpg"
-              alt="Apple iPhone 16 Pro"
-              className="w-full rounded"
-            />
-            <h3 className="font-bold text-lg mt-2">Apple iPhone 16 Pro</h3>
-            <p className="text-gray-500 text-sm mt-1">₹ 116,900</p>
-            <p className="font-semibold mt-1 text-green-500">
-              9.1/10 by Expert
-            </p>
-            <ul className="text-sm text-gray-600 mt-2 space-y-1">
-              <li>Apple A18 Pro</li>
-              <li>6.3 (16 cm) 120Hz Display</li>
-              <li>48+48+12 MP Rear | 12 MP Front</li>
-              <li>8 GB RAM | 128 GB Storage</li>
-              <li>3582 mAh | 20W Charging</li>
-            </ul>
-          </div>
+          <div className="grid grid-cols-4 border-t border-gray-200 pt-4">
+            {/* Card 1 */}
+            <div className="border shadow-sm bg-white text-center">
+              <div className="p-7">
+                <Image
+                  width={200}
+                  height={5}
+                  src="https://wallpaperaccess.com/full/271396.jpg"
+                  alt="Samsung Galaxy S24 Ultra"
+                  className="w-full rounded"
+                />
+              </div>
+              <h3 className="font-bold text-lg mt-2">
+                Samsung Galaxy S24 Ultra
+              </h3>
+              <p className="text-blue-500 font-bold text-sm mt-1">₹ 95,800</p>
 
-          {/* Card 3 */}
-          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
-            <Image
-              width={50}
-              height={10}
-              src="https://wallpaperaccess.com/full/271396.jpg"
-              alt="Samsung Galaxy S23 Ultra 5G"
-              className="w-full rounded"
-            />
-            <h3 className="font-bold text-lg mt-2">
-              Samsung Galaxy S23 Ultra 5G
-            </h3>
-            <p className="text-gray-500 text-sm mt-1">₹ 72,999</p>
-            <p className="font-semibold mt-1 text-green-500">
-              8.8/10 by Expert
-            </p>
-            <ul className="text-sm text-gray-600 mt-2 space-y-1">
-              <li>Snapdragon 8 Gen 2</li>
-              <li>6.8 (17.27 cm) 120Hz Display</li>
-              <li>200+12+10+10 MP Rear | 12 MP Front</li>
-              <li>12 GB RAM | 256 GB Storage</li>
-              <li>5000 mAh | 45W Charging</li>
-            </ul>
-          </div>
+              <ul className="text-sm text-gray-600 mt-2 ">
+                <div className="font-semibold mt-1 text-green-500 bg-[#F6F6F8] p-3 border">
+                  8.7/10 by Expert
+                </div>
+                <div className="p-3 border ">Snapdragon 8 Gen 2</div>
+                <div className="p-3 border">6.8 (17.27 cm) 120Hz Display</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  200+12+10+10 MP Rear | 12 MP Front
+                </div>
+                <div className="p-3 border">12 GB RAM | 256 GB Storage</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  5000 mAh | 45W Charging
+                </div>
+              </ul>
+            </div>
 
-          {/* Card 4 */}
-          <div className="border rounded-lg shadow-sm bg-white text-center p-4">
-            <Image
-              width={50}
-              height={10}
-              src="https://wallpaperaccess.com/full/271396.jpg"
-              alt="Apple iPhone 16 Pro Max"
-              className="w-full rounded"
-            />
-            <h3 className="font-bold text-lg mt-2">Apple iPhone 16 Pro Max</h3>
-            <p className="text-gray-500 text-sm mt-1">₹ 141,900</p>
-            <p className="font-semibold mt-1 text-gray-500">--</p>
-            <ul className="text-sm text-gray-600 mt-2 space-y-1">
-              <li>Apple A18 Pro</li>
-              <li>6.9 (17.53 cm) 120Hz Display</li>
-              <li>48+48+12 MP Rear | 12 MP Front</li>
-              <li>8 GB RAM | 256 GB Storage</li>
-              <li>4685 mAh | 20W Charging</li>
-            </ul>
+            {/* Card 2 */}
+            <div className="border shadow-sm bg-white text-center">
+              <div className="p-7">
+                <Image
+                  width={200}
+                  height={5}
+                  src="https://wallpaperaccess.com/full/271396.jpg"
+                  alt="Apple iPhone 16 Pro"
+                  className="w-full rounded"
+                />
+              </div>
+              <h3 className="font-bold text-lg mt-2">Apple iPhone 16 Pro</h3>
+              <p className="text-blue-500 font-bold text-sm mt-1">₹ 116,900</p>
+
+              <ul className="text-sm text-gray-600 mt-2">
+                <div className="font-semibold mt-1 text-green-500 bg-[#F6F6F8] p-3 border">
+                  8.7/10 by Expert
+                </div>
+                <div className="p-3 border ">Snapdragon 8 Gen 2</div>
+                <div className="p-3 border">6.8 (17.27 cm) 120Hz Display</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  200+12+10+10 MP Rear | 12 MP Front
+                </div>
+                <div className="p-3 border">12 GB RAM | 256 GB Storage</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  5000 mAh | 45W Charging
+                </div>
+              </ul>
+            </div>
+
+            {/* Card 3 */}
+            <div className="border shadow-sm bg-white text-center">
+              <div className="p-7">
+                <Image
+                  width={200}
+                  height={5}
+                  src="https://wallpaperaccess.com/full/271396.jpg"
+                  alt="Samsung Galaxy S23 Ultra 5G"
+                  className="w-full rounded"
+                />
+              </div>
+              <h3 className="font-bold text-lg mt-2">
+                Samsung Galaxy S23 Ultra 5G
+              </h3>
+              <p className="text-blue-500 font-bold text-sm mt-1">₹ 72,999</p>
+
+              <ul className="text-sm text-gray-600 mt-2">
+                <div className="font-semibold mt-1 text-green-500 bg-[#F6F6F8] p-3 border">
+                  8.7/10 by Expert
+                </div>
+                <div className="p-3 border ">Snapdragon 8 Gen 2</div>
+                <div className="p-3 border">6.8 (17.27 cm) 120Hz Display</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  200+12+10+10 MP Rear | 12 MP Front
+                </div>
+                <div className="p-3 border">12 GB RAM | 256 GB Storage</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  5000 mAh | 45W Charging
+                </div>
+              </ul>
+            </div>
+
+            {/* Card 4 */}
+            <div className="border shadow-sm bg-white text-center">
+              <div className="p-7">
+                <Image
+                  width={200}
+                  height={5}
+                  src="https://wallpaperaccess.com/full/271396.jpg"
+                  alt="Apple iPhone 16 Pro Max"
+                  className="w-full rounded"
+                />
+              </div>
+              <h3 className="font-bold text-lg mt-2">
+                Apple iPhone 16 Pro Max
+              </h3>
+              <p className="text-blue-500 font-bold text-sm mt-1">₹ 141,900</p>
+              <ul className="text-sm text-gray-600 mt-2">
+                <div className="font-semibold mt-1 text-green-500 bg-[#F6F6F8] p-3 border">
+                  8.7/10 by Expert
+                </div>
+                <div className="p-3 border ">Snapdragon 8 Gen 2</div>
+                <div className="p-3 border">6.8 (17.27 cm) 120Hz Display</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  200+12+10+10 MP Rear | 12 MP Front
+                </div>
+                <div className="p-3 border">12 GB RAM | 256 GB Storage</div>
+                <div className="p-3 border bg-[#F6F6F8]">
+                  5000 mAh | 45W Charging
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
